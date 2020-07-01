@@ -1,0 +1,12 @@
+{
+  "name": "koawheel",
+  "NODE_ENV": "production",
+  "max_memory_restart": "1000M",
+  "script": "./bin/www",
+  "exec_mode": "fork",
+  "instances": 1,
+  "instance_var": "INSTANCE_ID",
+  "watch": false,
+  "output": "/dev/null",
+  "ignore_watch": ["node_modules", "logs", "dist", "tests", "tmp"]
+}
