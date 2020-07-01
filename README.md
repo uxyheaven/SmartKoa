@@ -2,7 +2,7 @@
 
 ## WebIDE
 
-https://uxyheaven.cloudstudio.net/ws/wyypdp
+https://uxyheaven.cloudstudio.net/ws/yqeihv
 
 ## 模块说明
 
