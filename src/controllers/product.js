@@ -1,8 +1,8 @@
-const { GET, POST, ROUTER, INGORETOKEN } = require('../core/routerLoader')
-const config = require('../../config/index.js')
+const { GET, POST, ROUTER, INGORETOKEN } = require('@/core/routerLoader')
+const config = require('@root/config/index.js')
 
 // 加载Model
-const { Product } = require('../core/modelLoader.js')
+const { Product } = require('@/core/modelLoader.js')
 
 @INGORETOKEN() // 忽略jwt的验证
 class product {
