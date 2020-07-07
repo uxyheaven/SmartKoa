@@ -22,12 +22,12 @@ require('@/core/pluginsLoader.js').init(app)
 require('@/core/middlewaresLoader.js').init(app)
 
 // ServiceLoader
-const serviceLoader = require('@/core/serviceLoader')
-serviceLoader.init()
+// const serviceLoader = require('@/core/serviceLoader')
+// serviceLoader.init()
 
 // ExtendLoader
-const extendLoader = require('@/core/extendLoader')
-extendLoader.init()
+// const extendLoader = require('@/core/extendLoader')
+// extendLoader.init()
 
 // 连接数据库, 加载数据模型, ModelLoader
 
