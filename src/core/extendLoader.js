@@ -1,9 +1,9 @@
 const glob = require('glob')
 const path = require('path')
-const dir = path.join(__dirname, '../extends')
+const dir = path.join(__dirname, '@/extends')
 
 const loader = {}
-loader.init = function() {
+loader.init = function () {
   const files = glob.sync(dir + '/*.js')
 
   for (const file of files) {

@@ -15,11 +15,11 @@ const glob = require('glob')
 const path = require('path')
 const Sequelize = require('sequelize')
 
-const config = require('../../config')
+const config = require('@root/config')
 
 const modelLoader = {}
 
-modelLoader.init = function(params = { force: false }) {
+modelLoader.init = function (params = { force: false }) {
   // 连接数据库
   const _sequelize = new Sequelize(
     config.mysql.db_name,
@@ -72,10 +72,10 @@ modelLoader.init = function(params = { force: false }) {
   console.log(`mysql.url: ${config.mysql.url}`)
   _sequelize
     .sync(force ? { force: force } : {})
-    .then(function() {
+    .then(function () {
       console.log('Database successed.')
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.log('Database failed. Error: %s', err)
     })
 

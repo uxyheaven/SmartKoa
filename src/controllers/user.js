@@ -1,6 +1,6 @@
-const { GET, POST, ROUTER, INGORETOKEN } = require('../core/routerLoader')
+const { GET, POST, ROUTER, INGORETOKEN } = require('@/core/routerLoader')
 const jsonwebtoken = require('jsonwebtoken')
-const config = require('../../config/index.js')
+const config = require('@root/config/index.js')
 
 const chech_a = async (ctx, next) => {
   const a = ctx.request.query.a

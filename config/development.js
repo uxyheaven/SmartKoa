@@ -10,7 +10,6 @@ module.exports = {
 
   // 数据库
   mysql: {
-    enable: false,
     url: 'localhost',
     user: 'root',
     psw: '123456',
@@ -19,7 +18,6 @@ module.exports = {
 
   // redis
   redis: {
-    enable: false,
     sentinelsEnable: false,
     // 哨兵
     sentinels: [{ host: '', port: '' }],
@@ -34,15 +32,5 @@ module.exports = {
     enable: false,
     secret: '123456',
     expired: '23h',
-  },
-
-  // log
-  log: {
-    enable: true,
-  },
-
-  // cors
-  cors: {
-    enable: false,
   },
 }
