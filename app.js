@@ -31,10 +31,6 @@ require('@/core/middlewaresLoader.js').init(app)
 
 // 连接数据库, 加载数据模型, ModelLoader
 
-// error handler
-const onerror = require('koa-onerror')
-onerror(app)
-
 // 跨域问题
 
 // 健康检测
