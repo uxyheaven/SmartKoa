@@ -1,4 +1,4 @@
-const plugins = require('@root/package.json').skPlugins
+const plugins = require('@root/smart').plugins
 console.log('plugins:', plugins)
 
 const loader = {}

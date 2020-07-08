@@ -17,45 +17,6 @@
     "deploy": "node bin/deploy.js",
     "lint": "standard --fix"
   },
-  "skPlugins": [
-    {
-      "src": "@/plugins/redis",
-      "enable": false
-    },
-    {
-      "src": "@/plugins/model",
-      "enable": false
-    }
-  ],
-  "skMiddlewares": [
-    {
-      "src": "@/middlewares/cors"
-    },
-    {
-      "src": "@/middlewares/alive"
-    },
-    {
-      "src": "@/middlewares/bodyparser"
-    },
-    {
-      "src": "koa-json"
-    },
-    {
-      "src": "@/middlewares/log4"
-    },
-    {
-      "src": "@/middlewares/URLPrefix",
-      "options": {
-        "prefix": "/api"
-      }
-    },
-    {
-      "src": "@/middlewares/responseFormatter"
-    },
-    {
-      "src": "@/middlewares/jwt"
-    }
-  ],
   "engines": {
     "node": ">=12.13.0"
   },
