@@ -1,4 +1,4 @@
-const utils = require('../utils/utils')
+const utils = require('@/utils/utils')
 const {
   GET,
   POST,
@@ -8,7 +8,7 @@ const {
   INGORETOKEN,
   CACHE,
   DIRTYCACHE,
-} = require('../core/routerLoader')
+} = require('@/core/routerLoader')
 
 const check_a = async (ctx, next) => {
   const a = ctx.request.query.a

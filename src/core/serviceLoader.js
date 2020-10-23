@@ -1,6 +1,6 @@
 const glob = require('glob')
 const path = require('path')
-const dir = path.join(__dirname, '../services')
+const dir = path.join(__dirname, '@/services')
 
 const loader = {}
 loader.init = function () {
@@ -10,7 +10,7 @@ loader.init = function () {
     const name = path.basename(file, '.js')
     if (name.indexOf('_') === 0) continue
 
-    const service = require(`../services/${name}`)
+    const service = require(`@/services/${name}`)
     if (typeof service.init === 'function') {
       service.init()
     }

@@ -1,6 +1,6 @@
-// 校验请求的前缀
-module.exports = function(params) {
-  const prefix = params.prefix
+// 过滤前缀
+module.exports = function (options) {
+  const { prefix } = options
   return async (ctx, next) => {
     if (prefix && ctx.originalUrl.indexOf(prefix) !== 0) {
       ctx.throw(404)
