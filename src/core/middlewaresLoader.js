@@ -1,4 +1,4 @@
-const middlewares = require('@root/package.json').skMiddlewares
+const middlewares = require('@root/smart').middlewares
 console.log('middlewares:', middlewares)
 
 const loader = {}

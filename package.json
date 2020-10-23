@@ -17,45 +17,6 @@
     "deploy": "node bin/deploy.js",
     "lint": "standard --fix"
   },
-  "skPlugins": [
-    {
-      "src": "@/plugins/redis",
-      "enable": false
-    },
-    {
-      "src": "@/plugins/model",
-      "enable": false
-    }
-  ],
-  "skMiddlewares": [
-    {
-      "src": "@/middlewares/cors"
-    },
-    {
-      "src": "@/middlewares/alive"
-    },
-    {
-      "src": "@/middlewares/bodyparser"
-    },
-    {
-      "src": "koa-json"
-    },
-    {
-      "src": "@/middlewares/log4"
-    },
-    {
-      "src": "@/middlewares/URLPrefix",
-      "options": {
-        "prefix": "/api"
-      }
-    },
-    {
-      "src": "@/middlewares/responseFormatter"
-    },
-    {
-      "src": "@/middlewares/jwt"
-    }
-  ],
   "engines": {
     "node": ">=12.13.0"
   },
@@ -95,7 +56,6 @@
     "koa-json": "^2.0.2",
     "koa-jwt": "^3.6.0",
     "koa-logger": "^2.0.1",
-    "koa-onerror": "^1.2.1",
     "koa-router": "^7.1.1",
     "koa-static": "^3.0.0",
     "koa-views": "^5.2.1",
